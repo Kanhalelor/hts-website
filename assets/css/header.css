@@ -1,0 +1,71 @@
+.main-header {
+    background: var(--primary-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: var(--white);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.school-short {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-btn {
+    background: var(--yellow);
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--primary-green);
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+@media (max-width: 900px) {
+    .nav-links.active {
+        display: flex;
+    }
+} 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windhoek Technical High School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+
+    <!-- JavaScript -->
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo-container">
+        <img src="assets/images/logo/wths-logo.png" alt="WTHS Logo">
+        <span class="school-short">WTHS</span>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="index.php">Home</a>
+        <a href="about.php">About Us</a>
+        <a href="academics.php">Academics</a>
+        <a href="hostel.php">Hostel</a>
+        <a href="contact.php">Contact Us</a>
+        <a href="reservations.php">Reservations</a>
+        <a href="shop.php">Shop</a>
+        <a href="login.php" class="login-btn">Login</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+</header>

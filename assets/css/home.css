@@ -1,0 +1,51 @@
+.hero {
+    height: 90vh;
+    background: url('../images/hts-landing.jpeg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.motto {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.glance-section {
+    padding: 50px;
+    background: var(--beige);
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.updates {
+    margin-top: 40px;
+    padding: 20px;
+}
+.updates h2 {
+    margin-bottom: 20px;
+} 

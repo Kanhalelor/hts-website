@@ -1,0 +1,15 @@
+.page-banner {
+    background: var(--primary-green);
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.content {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+}
+.content h2 {
+    margin-bottom: 20px;
+}

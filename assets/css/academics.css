@@ -1,0 +1,16 @@
+.departments {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dept {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+.dept h3 {
+    margin-bottom: 15px;
+}
