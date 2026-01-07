@@ -1,5 +1,10 @@
+<!-- About Us Page  -->
+
+<!-- Include hearder -->
 <?php include('includes/header.php'); ?>
+
 <link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/header.css">
 
 <section class="page-banner">
     <h1>About Us</h1>
@@ -19,5 +24,5 @@
     <h2>Our Mission</h2>
     <p>To provide quality education through discipline, innovation and hard work.</p>
 </section>
-
+<!-- Include footer -->
 <?php include('includes/footer.php'); ?>

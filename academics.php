@@ -1,5 +1,6 @@
 <?php include('includes/header.php'); ?>
 <link rel="stylesheet" href="assets/css/academics.css">
+<link rel="stylesheet" href="assets/css/header.css">
 
 <section class="page-banner">
     <h1>Academics</h1>

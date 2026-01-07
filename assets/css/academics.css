@@ -1,3 +1,6 @@
+/* Imports */
+@import url('global.css');
+
 .departments {
     display: flex;
     gap: 20px;

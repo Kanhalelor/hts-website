@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php include('includes/header.php'); ?>
 <link rel="stylesheet" href="assets/css/contact.css">
+<link rel="stylesheet" href="assets/css/header.css">
 
 <section class="page-banner">
     <h1>Contact Us</h1>

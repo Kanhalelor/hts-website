@@ -1,12 +1,14 @@
 <?php include('includes/header.php'); ?>
 <link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/header.css">
+
 
 <!-- HERO SECTION -->
 <section class="hero">
     <div class="hero-overlay">
-        <h1>Windhoek Technical High School</h1>
+        <h1 class="sch-name">Windhoek Technical High School</h1>
         <p class="motto">Work and Live</p>
-        <p class="address">Windhoek, Khomas Region, Namibia</p>
+        <p class="address">Hegel street, Academia, Windhoek, Namibia</p>
     </div>
 </section>
 
@@ -35,6 +37,7 @@
     </div>
 
     <!-- Updates -->
+     <h2>Updates</h2>
     <div class="updates box-style">
         <h3>Latest Updates</h3>
 
@@ -45,6 +48,14 @@
             <button onclick="nextUpdate()">❯</button>
         </div>
     </div>
+    <div class="sponsors box-style">
+    <h3>Our Sponsors</h3>
+    <div id="sponsorContainer"></div>
+    <button onclick="prevSponsor()">❮</button>
+    <button onclick="nextSponsor()">❯</button>
+</div>
+
 </section>
 <script src="assets/js/updates-slider.js"></script>
+<script src="assets/js/main.js"></script>
 <?php include('includes/footer.php'); ?>

@@ -1,7 +1,14 @@
+/* imports */
+@import url('global.css');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/* links */
+*
 .hero {
-    height: 90vh;
+    height: 70vh;
     background: url('../images/hts-landing.jpeg') center/cover no-repeat;
     position: relative;
+    width: 100%;
 }
 
 .hero-overlay {
@@ -15,18 +22,51 @@
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
+.hero-overlay h1 {
+    font-family: "Pirata One", system-ui;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 5.23rem;
+    margin-bottom: 10px;
+    background: linear-gradient(green, yellow);
+    background: -webkit-linear-gradient(green, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.motto {
-    font-size: 1.5rem;
-    margin-top: 10px;
+.hero-overlay .motto {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-top: 15px;
+    font-style: italic;
 }
+
+.hero-overlay .address {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
 
 .glance-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
     padding: 50px;
-    background: var(--beige);
+    background: var(--white);
+}
+
+.glance-section h2 {
+    font-family: "Pirata One", system-ui;
+    color: var(--beige);
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem;
+    background:  linear-gradient(green, yellow);
 }
 
 .stats-container {
@@ -47,5 +87,11 @@
     padding: 20px;
 }
 .updates h2 {
-    margin-bottom: 20px;
+    font-family: "Pirata One", system-ui;
+    color: var(--beige);
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem;
+    background:  linear-gradient(green, yellow);
 } 

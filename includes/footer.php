@@ -3,14 +3,14 @@
 
 <footer class="footer">
     <div class="footer-col">
-        <img src="assets/images/logo/wths-logo.png">
+        <img src="assets/images/logo/hts-logo.png" alt="WTHS Logo">
     </div>
 
     <div class="footer-col">
         <h4>Quick Links</h4>
-        <a href="#">Home</a>
-        <a href="#">Academics</a>
-        <a href="#">Hostel</a>
+        <a href="index.php">Home</a>
+        <a href="academics.php">Academics</a>
+        <a href="hostel.php">Hostel</a>
     </div>
 
     <div class="footer-col">
@@ -27,17 +27,11 @@
 
     <div class="footer-col">
         <h4>Follow Us</h4>
-        <img src="assets/icons/facebook.svg">
-        <img src="assets/icons/instagram.svg">
+        <img src="assets/icons/facebook.svg" alt="Facebook">
+        <img src="assets/icons/instagram.svg" alt="Instagram">
     </div>
 </footer>
 
-<div class="sponsors box-style">
-    <h3>Our Sponsors</h3>
-    <div id="sponsorContainer"></div>
-    <button onclick="prevSponsor()">❮</button>
-    <button onclick="nextSponsor()">❯</button>
-</div>
-
 </body>
 </html>
+<script src="assets/js/main.js"></script>

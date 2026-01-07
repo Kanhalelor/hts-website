@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Global Styles -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
 
     <!-- JavaScript -->
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="../assets/js/main.js"></script>
 </head>
 <body>
 
 <header class="main-header">
     <div class="logo-container">
-        <img src="assets/images/logo/wths-logo.png" alt="WTHS Logo">
+        <a href="../index.php"><img src="assets/images/logo/hts-logo.png" alt="WTHS Logo"></a>
         <span class="school-short">WTHS</span>
     </div>
 
