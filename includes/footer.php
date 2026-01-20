@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="assets/css/footer.css">
 <script src="assets/js/sponsors-slider.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <footer class="footer">
     <div class="footer-col">
@@ -24,12 +25,19 @@
         <p>School Account</p>
         <p>Hostel Account</p>
     </div>
-
-    <div class="footer-col">
-        <h4>Follow Us</h4>
-        <img src="assets/icons/facebook.svg" alt="Facebook">
-        <img src="assets/icons/instagram.svg" alt="Instagram">
+<!-- Social Media Icons -->
+<div class="footer-col">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
     </div>
+</div>
+
 </footer>
 
 </body>

@@ -3,17 +3,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 /* links */
-*
+
 .hero {
-    height: 70vh;
-    background: url('../images/hts-landing.jpeg') center/cover no-repeat;
     position: relative;
+    height: 70vh;
     width: 100%;
+    overflow: hidden;
 }
 
+/* Slides wrapper */
+.hero-slides {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* Common slide styles */
+.hero-slides .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+/* Individual slides with animations */
+.slide1 {
+    background-image: url('../images/hero/hts-landing.jpeg');
+    animation: slide1 24s infinite;
+}
+.slide2 {
+    background-image: url('../images/hero/workshop4.jpeg');
+    animation: slide2 24s infinite;
+}
+.slide3 {
+    background-image: url('../images/hero/hall1.jpeg');
+    animation: slide3 24s infinite;
+}
+.slide4 {
+    background-image: url('../images/hero/eskom2025.jpeg');
+    animation: slide4 24s infinite;
+}
+
+/* Animations */
+@keyframes slide1 {
+    0%   { opacity: 1; }
+    20%  { opacity: 1; }
+    25%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes slide2 {
+    0%   { opacity: 0; }
+    25%  { opacity: 0; }
+    30%  { opacity: 1; }
+    45%  { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes slide3 {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    55%  { opacity: 1; }
+    70%  { opacity: 1; }
+    75%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes slide4 {
+    0%   { opacity: 0; }
+    75%  { opacity: 0; }
+    80%  { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Overlay always on top */
 .hero-overlay {
+    position: relative;
+    z-index: 2;
     background: rgba(0,0,0,0.6);
-    color: white;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -22,6 +92,7 @@
     text-align: center;
 }
 
+
 .hero-overlay h1 {
     font-family: "Pirata One", system-ui;
     letter-spacing: 3px;
@@ -29,10 +100,10 @@
     font-weight: 600;
     font-size: 5.23rem;
     margin-bottom: 10px;
-    background: linear-gradient(green, yellow);
-    background: -webkit-linear-gradient(green, yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--beige);
+    /* background: linear-gradient(green, yellow); */
+    /* background: -webkit-linear-gradient(green, yellow); */
+    /* -webkit-text-fill-color: transparent; */
 }
 
 .hero-overlay .motto {
@@ -68,6 +139,13 @@
     padding: 1.2rem 1.5rem;
     background:  linear-gradient(green, yellow);
 }
+.glance-section > p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
 
 .stats-container {
     display: flex;
@@ -77,21 +155,125 @@
 }
 
 .stat-card {
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     width: 200px;
 }
 
+/* Updates and Sponsors Section  */
+/* Updates */
+.updates-sponsors-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
 .updates {
     margin-top: 40px;
-    padding: 20px;
+    padding: 30px;
 }
-.updates h2 {
-    font-family: "Pirata One", system-ui;
-    color: var(--beige);
-    margin-bottom: 60px;
-    font-weight: 500;
-    font-size: 2rem;
-    padding: 1.2rem 1.5rem;
-    background:  linear-gradient(green, yellow);
-} 
+
+.updates-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.update-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.update-card h4 {
+    margin: 15px 0 10px;
+    font-size: 1.1rem;
+}
+
+.update-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--yellow);
+    transform: translateX(4px);
+}
+.update-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-card .read-more {
+    margin-top: auto;
+}
+
+/* Sponsors Section  */
+.sponsors {
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.sponsors-grid img {
+    max-width: 100%;
+    height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sponsors-grid img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+.sponsor-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.sponsor-card img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.sponsor-card img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .updates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .updates-grid {
+        grid-template-columns: 1fr;
+    }
+}

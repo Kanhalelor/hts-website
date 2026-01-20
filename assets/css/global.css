@@ -32,3 +32,38 @@ h2 {
     font-size: 2rem;
     font-weight: 600;
 }
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.stat-icon {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+}
+
+.section-title {
+    font-family: "Pirata One", system-ui;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    background: linear-gradient(green, yellow);
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--primary-green);
+    margin-top: 10px;
+}
