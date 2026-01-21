@@ -37,11 +37,14 @@
 }
 
 .nav-links a {
+    font-family: 'Arial', sans-serif;
+    position: relative;
     margin: 0 12px;
     color: var(--white);
     text-decoration: none;
-    font-size: large;
+    font-size: 1.1rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .login-btn {
@@ -56,6 +59,39 @@
     font-size: 1.8rem;
     cursor: pointer;
 }
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--yellow);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.login-btn {
+    background: var(--yellow);
+    color: #000 !important;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: #fff;
+    color: var(--primary-green) !important;
+}
+
+.nav-links a:hover {
+    color: var(--yellow);
+    transform: translateY(-2px);
+}
+
 
 /* Responsive */
 @media (max-width: 900px) {

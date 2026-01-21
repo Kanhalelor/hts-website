@@ -27,7 +27,7 @@
         <a href="hostel.php">Hostel</a>
         <a href="contact.php">Contact Us</a>
         <a href="reservations.php">Reservations</a>
-        <a href="shop.php">Shop</a>
+        <a href="sports.php">Sports</a>
         <a href="login.php" class="login-btn">Login</a>
     </nav>
 

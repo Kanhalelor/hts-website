@@ -1,3 +1,4 @@
+<?php $pageTitle = "Home"; ?>
 <?php include('includes/header.php'); ?>
 <link rel="stylesheet" href="assets/css/home.css">
 <link rel="stylesheet" href="assets/css/header.css">
@@ -49,14 +50,13 @@
 <section class="updates-sponsors-section">
 
     <!-- Updates -->
-    <h2 class="section-title">Updates</h2>
+    <h2> Latest News and Updates</h2>
     <div class="updates box-style">
-        <h3>Latest Updates</h3>
         <!-- Updates will be dynamically loaded here -->
         <div class="updates-grid" id="updatesContainer">
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/update1.jpg" alt="School Science Fair">
+        <img src="assets/images/updates/culture.jpeg" alt="School Science Fair">
         <h4>HTS Wins Regional Science Fair</h4>
         <p>
             Windhoek Technical High School emerged victorious at the Khomas Regional
@@ -67,7 +67,7 @@
     </div>
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/update2.jpg" alt="Sports Day">
+        <img src="assets/images/updates/napc-2025.jpeg" alt="Sports Day">
         <h4>Annual Sports Day Highlights</h4>
         <p>
             Our annual sports day brought together learners, staff, and parents in
@@ -78,7 +78,7 @@
     </div>
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/update3.jpg" alt="Coding Workshop">
+        <img src="assets/images/updates/history.jpg" alt="Coding Workshop">
         <h4>Coding & Robotics Workshop</h4>
         <p>
             Learners participated in a hands-on coding and robotics workshop aimed
@@ -89,7 +89,7 @@
     </div>
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/update4.jpg" alt="New Intake">
+        <img src="assets/images/updates/profile.jpeg" alt="New Intake">
         <h4>2025 Grade 8 Intake Orientation</h4>
         <p>
             New learners were welcomed during the Grade 8 orientation, introducing

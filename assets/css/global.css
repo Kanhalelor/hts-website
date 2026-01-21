@@ -12,6 +12,21 @@
     --beige: #f5f5dc;
 }
 
+/* Global box-sizing reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--beige);
+    color: var(--primary-green);
+    line-height: 1.6;
+}
+
 .box-style {
     background: #fff;
     border-radius: 5px;
@@ -24,6 +39,7 @@
 }
 html {
     scroll-behavior: smooth;
+
 }
 
 h2 {
@@ -50,20 +66,8 @@ h2 {
     font-size: 2.5rem;
     color: var(--primary-green);
 }
+.stat-card p {
+    font-size: 1.2rem;
+    color: var(--secondary-brown);
+}
 
-.section-title {
-    font-family: "Pirata One", system-ui;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    padding: 1rem 1.5rem;
-    display: inline-block;
-    background: linear-gradient(green, yellow);
-}
-.section-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: var(--primary-green);
-    margin-top: 10px;
-}
