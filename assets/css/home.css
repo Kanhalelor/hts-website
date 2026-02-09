@@ -94,7 +94,7 @@
 
 
 .hero-overlay h1 {
-    font-family: "Pirata One", system-ui;
+    font-family: "Stix Two", system-ui;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 600;
@@ -108,13 +108,16 @@
 
 .hero-overlay .motto {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
     margin-top: 15px;
     font-style: italic;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--beige);
 }
 
 .hero-overlay .address {
     font-family: 'Playfair Display', serif;
+    font-weight: 600;
     font-size: 1rem;
     margin-top: 10px;
     opacity: 0.9;
