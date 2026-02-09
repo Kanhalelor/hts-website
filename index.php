@@ -67,7 +67,7 @@
     </div>
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/napc-2025.jpeg" alt="Sports Day">
+        <img src="assets/images/updates/culture.jpeg" alt="Sports Day">
         <h4>Annual Sports Day Highlights</h4>
         <p>
             Our annual sports day brought together learners, staff, and parents in
@@ -78,10 +78,10 @@
     </div>
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/history.jpg" alt="Coding Workshop">
-        <h4>Coding & Robotics Workshop</h4>
+        <img src="assets/images/updates/napc-2025.jpeg" alt="Coding Workshop">
+        <h4>NUST Annual Programming Review</h4>
         <p>
-            Learners participated in a hands-on coding and robotics workshop aimed
+            Learners participated in a hands-on coding competition aimed
             at building problem-solving and digital skills.
         </p>
 
@@ -89,7 +89,7 @@
     </div>
 
     <div class="update-card box-style">
-        <img src="assets/images/updates/profile.jpeg" alt="New Intake">
+        <img src="assets/images/updates/history.jpg" alt="New Intake">
         <h4>2025 Grade 8 Intake Orientation</h4>
         <p>
             New learners were welcomed during the Grade 8 orientation, introducing
